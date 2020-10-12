@@ -1,0 +1,25 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    color: green;
+   animation: changeBack 1.5s ease infinite;
+}
+@keyframes changeBack {
+    0% {
+        background-color: green;
+        width: 100px;
+    }
+    50% {
+        background-color: red;
+        width: 150px;
+}
+100% {
+    background-color: green;
+    width: 100px;
+}
+}
+
+div:hover {
+    animation-play-state: paused;
+}
